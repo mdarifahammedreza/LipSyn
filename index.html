@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Homepage</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>About</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-center">
+                <a class="btn btn-ghost normal-case text-xl">LipSyn</a>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+
+                <button class="btn text-xs font-extrabold" onclick="my_modal_1.showModal()">Sign Up</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Your Email</span>
+                            </label>
+                            <label class="input-group">
+                                <span>Email</span>
+                                <input type="text" placeholder="info@site.com" class="input input-bordered" />
+                            </label>
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Your Password</span>
+                            </label>
+                            <label class="input-group">
+                                <span>Pass </span>
+                                <input type="password" class="input input-bordered" />
+                            </label>
+                        </div>
+                        <div class="text-start mt-5">
+                            <form method="dialog">
+                                <button class="btn">Sign up</button>
+                            </form>
+                        </div>
+                        <p class="py-4 font-medium">Want to Create new account?<button><a class="text-blue-400"
+                                    href="/SignUp.html">Click
+                                    here</a></button></p>
+                    </div>
+                </dialog>
+            </div>
+        </div>
+    </header>
+    <section class="flex lg:gap-10 items-center justify-center mt-10">
+        <div class="lg:ml-52">
+            <p class="font-medium text-3xl mb-8">Create a free AI video</p>
+            <ol>
+                <li class="mb-3 text-lg font-medium">1. Upload a Csv file</li>
+                <input type="file"
+                    class="file-input file-input-bordered file-input-sm file-input-info w-full max-w-xs" />
+                <li class="mb-3 mt-8 text-lg font-medium">2. Write your Script</li>
+                <textarea placeholder="Script"
+                    class=" textarea textarea-bordered textarea-md w-full max-w-xs"></textarea>
+                <button class="btn mt-8 btn-info items-center">Start Generate</button>
+            </ol>
+
+        </div>
+        <div class="bg-blue-200 p-5 rounded-lg shadow-xl shadow-sky-200">
+            <div>
+                <ul class="menu menu-horizontal">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                    <li><a>Item 3</a></li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-5">
+                <div>
+                    <img src="./SRC/Screenshot 2023-10-16 003403.png" alt="">
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                    <div class="avatar flex-col text-center">
+                        <div class="w-24 rounded">
+                            <img src="./SRC/photo-1534528741775-53994a69daeb.jpg" />
+                        </div>
+                        <p class="font-semibold">Type-1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
